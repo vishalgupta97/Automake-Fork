@@ -1,0 +1,16 @@
+graph graphname {
+0 [label="Root"];0--1;
+1 [label="name=>input "];1--3;
+3 [label="name=>stmts "];3--7;
+7 [label="name=>stmts "];7--15;
+15 [label="lhs=>value bin_PROGRAMS
+name=>stmt rhs=>value apple
+type=>automake "];3--8;
+8 [label="name=>stmts "];8--17;
+17 [label="lhs=>value bin_PROGRAMS
+name=>stmt rhs=>value apple
+type=>automake "];3--9;
+9 [label="name=>stmts "];9--19;
+19 [label="lhs=>value apple_SOURCES
+name=>stmt rhs=>value ball
+type=>automake "];}
