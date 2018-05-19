@@ -1,0 +1,44 @@
+bin_PROGRAM=hello # list of programs that makefile should build
+hello_SOURCES=main.c # source files
+SUBDIRS=src # subdirectory
+dist_doc_DATA=README
+
+## for comments
+xs=a.c b.c
+foo_SOURCES=c.c $(xs)
+
+xmldir=$(datadir)/xml
+
+## Primaries=> PROGRAMS, LIBRARIES, LTLIBRARIES, LISP, PYTHON, JAVA, SCRIPTS, DATA, HEADERS, MASN, TEXINFOS.
+
+##Right side of primary can be empty.
+
+#? Recursive Automake with subdir=> What does it require.
+
+_LDADD , _LDFLAGS=> Linker Libraries
+
+_DEPENDENCIES, _AR(Pg 71), _LINK, _SHORTNAME
+
+Primary prefixes=> dist_, nodist_, nobase_, notrans_
+EXTRA_ Prefix
+AM_ => Shadow variables corresponding to User variables.
+
+## true.o: true.c => Make rule, to be directly copied.
+
+library_LIBADD, _LIBTOOLFLAGS
+
+## \ for multiple line
+
+_LTLIBRARIES=> Libtool libraries.
+
+## += for append.
+
+## EXTRA_DIST
+
+## Conditionals if .. else .. endif block(Pg 57)
+
+Per target compilation flags=> _CCASFLAGS, _CFLAGS, _CPPFLAGS, _CXXFLAGS, _FFLAGS, _GCJFLAGS, _LFLAGS, _OBJCFLAGS, _OBJCXXFLAGS, _RFLAGS, _UPCFLAGS, _YFLAGS
+
+## Variable defined when c++ code is detected?
+
+##ETAGS_ARGS, _ ETAGSFLAGS
