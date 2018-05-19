@@ -1,8 +1,10 @@
 #!/usr/bin/perl
 package lexer;
 use Exporter;
-our @ISA=qw(Exporter);
-our @EXPORT=qw(lex);
+our @ISA = qw(Exporter);
+our @EXPORT = qw(lex);
+# lex(string)
+# Takes as input a string of line. Divides it into tokens as specified by Regex and outputs an array of Tokens. Every Token is an array having two values: token name and its value. If its an operator, it has only one value.
 sub lex($)
 {
 	@tokens;
@@ -26,12 +28,4 @@ sub lex($)
 	}
 	return @tokens;
 }
-
-#print("Enter an Expression\n");
-#$_=<STDIN>;
-#@tokens=lex($_);
-#foreach $token (@tokens)
-#{
-#	print join(" ",@{$token}),"\n";
-#}
 
